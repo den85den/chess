@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/adaptiv.css">
+    <title>Топ-10</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <div class="header">
+         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container cont">
+              <a href="bootstrap_sait.html" class="navbar-brand fs-2">Chess World</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse dflx" id="navbarContent">
+
+                <div>
+                  <ul class="navbar-nav ms-auto mb-7">
+                    <li class="nav-item">
+                      <a href="bootstrap_sait.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="bootstrap_sait_1.html" class="nav-link">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="bootstrap_sait_2.html" class="nav-link">Турниры</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="bootstrap_sait_3.html" class="nav-link active">Топ-10</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="d-flex formss">
+                  <button class="btn btn-outline-light btn-lg me-2 btn_1" data-bs-toggle="modal" data-bs-target="#exampleModal_authorization">Войти</button>
+                  <button class="btn btn-outline-light btn-lg me-2 btn_2" data-bs-toggle="modal" data-bs-target="#exampleModal_check_in">Зарегистрироваться</button>
+                </div>
+
+                <div>
+                  <form action="" class="d-flex search" >
+                    <input type="search" class="form-control" placeholder="Поиск">
+                    <!-- <button class="btn btn-outline-info">search</button> -->
+                  </form>
+                </div>
+
+             </div>
+           </div>
+         </nav>
+         <!-- //// Меню-шапка которое трансформируется в бургер  при уменьшении ширины -->
+
+         <!--- Modal - вылезает окно для ввода инфы при нажатии на кнопку-------->
+
+         <!-- авторицаци -->
+         <div class="modal fade" id="exampleModal_authorization" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Form</h5>
+                 <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <!-- форма регистрации-->
+              <div class="modal-body">
+                 <form action="index.html" method="post">
+                   <div class="row mb-3">
+                     <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                     <div class="col-sm-10">
+                       <input type="email" class="form-control" id="inputEmail">
+                     </div>
+                   </div>
+                   <div class="row mb-3">
+                     <label for="inputPass" class="col-sm-2 col-form-label">Password</label>
+                     <div class="col-sm-10">
+                       <input type="password" class="form-control" id="inputPass">
+                     </div>
+                   </div>
+                   <fieldset>
+                     <div class="row mb-3">
+                       <div class="col-sm-10">
+                         <div class="form-check">
+                           <input type="checkbox" id="gridCheck" class="form-check-input">
+                           <label for="gridCheck" class="form-check-labek">Save password</label>
+                         </div>
+                       </div>
+                     </div>
+                   </fieldset>
+                 </form>
+               </div>
+               <div class="modal-footer">
+                 <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button class="btn btn-secondary">Save changes</button>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- /// форма авторицации-->
+
+         <!-- регистрация -->
+
+         <div class="modal fade" id="exampleModal_check_in" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Form</h5>
+                 <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <!-- форма регистрации-->
+              <div class="modal-body">
+                 <form action="index.html" method="post">
+                   <div class="row mb-3">
+                     <label for="inputlog" class="col-sm-2 col-form-label">Login</label>
+                     <div class="col-sm-10">
+                       <input type="text" class="form-control" id="inputlog">
+                     </div>
+                   </div>
+                   <div class="row mb-3">
+                     <label for="inputEmail1" class="col-sm-2 col-form-label">Email</label>
+                     <div class="col-sm-10">
+                       <input type="email" class="form-control" id="inputEmail1">
+                     </div>
+                   </div>
+                   <div class="row mb-3">
+                     <label for="inputPass1" class="col-sm-2 col-form-label">Password</label>
+                     <div class="col-sm-10">
+                       <input type="password" class="form-control" id="inputPass1">
+                     </div>
+                   </div>
+                   <fieldset>
+                     <div class="row mb-3">
+                       <div class="col-sm-10">
+                         <div class="form-check">
+                           <input type="checkbox" id="gridCheck1" class="form-check-input">
+                           <label for="gridCheck1" class="form-check-labek">Save password</label>
+                         </div>
+                       </div>
+                     </div>
+                   </fieldset>
+                 </form>
+               </div>
+               <!-- /// форма регистрации-->
+               <div class="modal-footer">
+                 <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button class="btn btn-secondary">Save changes</button>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <!-- /// форма регистрации-->
+
+         <!--          ///    Modal --------------------------->
+      </div>
+
+      <div class="body row">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 bg-light">
+            <h1>Шахматный мир !</h1>
+            <h2>Топ-10 сильнейших шахматистов 2021 :</h2>
+            <div class="card">
+              <img src="img/111.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>1 место  Magnus Carlsen 30 лет (2846)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/112.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>2 место  Fabiano Caruana 28  лет (2820)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/113.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>3 место  Ding Liren 28 лет (2791)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/114.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>4 место Ian  Nepomniachtchi 30 лет (2789)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/115.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>5 место Levon Aronian 38 лет (2781)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/116.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>6 место Alexander Grischuk 37 лет (2777)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/117.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>7 место Anish Giri 26 лет (2776)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/118.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>8 место  Shakhriyar Mamedyarov 35 лет (2770)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/119.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>9 место Wesley So 27 лет (2770)</b></p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="img/120.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text"><b>10 место Teimour Radjabov 33 лет (2765)</b></p>
+              </div>
+            </div>
+            <a href="#top" class="float-right"> вернуться на вверх
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h3>About us</h3>
+        <p><b>Founder & editor-in-chief,Web-Developer,Design:</b> Denis Chernikov (e-mail:arinohka.85@mail.ru)</p>
+      </div>
+   </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>

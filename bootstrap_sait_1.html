@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/adaptiv.css">
+    <title>Новости</title>
+  </head>
+  <body>
+    <a name="top"></a>
+    <div class="wrapper">
+      <div class="header">
+         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
+            <div class="container cont">
+              <a href="bootstrap_sait.html" class="navbar-brand fs-2">Chess World</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse dflx" id="navbarContent">
+
+                <div>
+                  <ul class="navbar-nav ms-auto mb-7">
+                    <li class="nav-item">
+                      <a href="bootstrap_sait.html" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="bootstrap_sait_1.html" class="nav-link active">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="bootstrap_sait_2.html" class="nav-link">Турниры</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="bootstrap_sait_3.html" class="nav-link">Топ-10</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="d-flex formss">
+                  <button class="btn btn-outline-light btn-lg me-2 btn_1" data-bs-toggle="modal" data-bs-target="#exampleModal_authorization">Войти</button>
+                  <button class="btn btn-outline-light btn-lg me-2 btn_2" data-bs-toggle="modal" data-bs-target="#exampleModal_check_in">Зарегистрироваться</button>
+                </div>
+
+                <div>
+                  <form action="" class="d-flex search" >
+                    <input type="search" class="form-control" placeholder="Поиск">
+                    <!-- <button class="btn btn-outline-info">search</button> -->
+                  </form>
+                </div>
+
+             </div>
+           </div>
+         </nav>
+         <!-- //// Меню-шапка которое трансформируется в бургер  при уменьшении ширины -->
+
+         <!--- Modal - вылезает окно для ввода инфы при нажатии на кнопку-------->
+
+         <!-- авторицаци -->
+         <div class="modal fade" id="exampleModal_authorization" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Form</h5>
+                 <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <!-- форма регистрации-->
+              <div class="modal-body">
+                 <form action="index.html" method="post">
+                   <div class="row mb-3">
+                     <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                     <div class="col-sm-10">
+                       <input type="email" class="form-control" id="inputEmail">
+                     </div>
+                   </div>
+                   <div class="row mb-3">
+                     <label for="inputPass" class="col-sm-2 col-form-label">Password</label>
+                     <div class="col-sm-10">
+                       <input type="password" class="form-control" id="inputPass">
+                     </div>
+                   </div>
+                   <fieldset>
+                     <div class="row mb-3">
+                       <div class="col-sm-10">
+                         <div class="form-check">
+                           <input type="checkbox" id="gridCheck" class="form-check-input">
+                           <label for="gridCheck" class="form-check-labek">Save password</label>
+                         </div>
+                       </div>
+                     </div>
+                   </fieldset>
+                 </form>
+               </div>
+               <div class="modal-footer">
+                 <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button class="btn btn-secondary">Save changes</button>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- /// форма авторицации-->
+
+         <!-- регистрация -->
+
+         <div class="modal fade" id="exampleModal_check_in" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLabel">Form</h5>
+                 <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <!-- форма регистрации-->
+              <div class="modal-body">
+                 <form action="index.html" method="post">
+                   <div class="row mb-3">
+                     <label for="inputlog" class="col-sm-2 col-form-label">Login</label>
+                     <div class="col-sm-10">
+                       <input type="text" class="form-control" id="inputlog">
+                     </div>
+                   </div>
+                   <div class="row mb-3">
+                     <label for="inputEmail1" class="col-sm-2 col-form-label">Email</label>
+                     <div class="col-sm-10">
+                       <input type="email" class="form-control" id="inputEmail1">
+                     </div>
+                   </div>
+                   <div class="row mb-3">
+                     <label for="inputPass1" class="col-sm-2 col-form-label">Password</label>
+                     <div class="col-sm-10">
+                       <input type="password" class="form-control" id="inputPass1">
+                     </div>
+                   </div>
+                   <fieldset>
+                     <div class="row mb-3">
+                       <div class="col-sm-10">
+                         <div class="form-check">
+                           <input type="checkbox" id="gridCheck1" class="form-check-input">
+                           <label for="gridCheck1" class="form-check-labek">Save password</label>
+                         </div>
+                       </div>
+                     </div>
+                   </fieldset>
+                 </form>
+               </div>
+               <!-- /// форма регистрации-->
+               <div class="modal-footer">
+                 <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 <button class="btn btn-secondary">Save changes</button>
+               </div>
+             </div>
+           </div>
+         </div>
+
+         <!-- /// форма регистрации-->
+
+         <!--          ///    Modal --------------------------->
+      </div>
+      <div class="body row">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 col-xl-8 offset-xl-2 bg-light">
+            <h1>Шахматный мир !</h1>
+            <h2>Карлсен обыграл Вашье-Лаграва в первом матче полуфинала онлайн-турнира</h2>
+            <div class="card">
+              <img src="img/13.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Новости</h5>
+                <p class="card-text"><b>МОСКВА, 11 фев - РИА Новости.</b>Действующий чемпион мира норвежец Магнус Карлсен одержал победу над французом Максимом Вашье-Лагравом в первом полуфинальном матче шахматного онлайн-турнира Opera Euro Rapid в рамках Champions Chess Tour.
+                  Матч, прошедший в четверг, завершился победой Карлсена со счетом 2,5-0,5. Норвежец выиграл две партии, еще одна завершилась вничью.
+                  В другом матче дня американец Уэсли Со переиграл азербайджанца Теймура Раджабова - 2,5-1,5.</p>
+              </div>
+            </div>
+            <div class="card">
+              <h2>Смагин: Карлсен победил Дубова благодаря умению держать удар</h2>
+              <img src="img/14.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Новости</h5>
+                <p class="card-text"><b>МОСКВА, 11 фев - РИА Новости, Олег Богатов.</b> Чемпион мира норвежец Магнус Карлсен за счет умения держать удар выстоял после поражения и на тай-брейке выиграл решающий матч у россиянина Даниила Дубова на четвертьфинальном этапе онлайн-турнира, заявил РИА Новости вице-президент Федерации шахмат Москвы Сергей Смагин.</p>
+                  <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                    Читать далее
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                      <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                    </svg>
+                  </button>
+                  <div class="collapse" id="collapseExample1">
+                    <div class="card card-body">
+                      <p>  Дубов во вторник уступил в первом поединке в быстрые шахматы со счетом 0,5-2,5, но в среду победил с результатом 2,5-0,5. Однако на тай-брейке Карлсен взял верх - 2-1. В полуфинале норвежец 11-12 февраля встретится с французом Максимом Вашье-Лагравом, вторую путевку в финал разыграют азербайджанец Теймур Раджабов и американец Уэсли Со.
+                        "Первый матч Карлсен провел очень уверенно и жестко, не дав Дубову ни одного шанса, - сказал по телефону Смагин. - А во втором Даниил играл хитро, а у Магнуса что-то не пошло. Он допустил два откровенных зевка, и для Дубова поединок сложился достаточно легко. Хотя по позициям все было не так и просто. Надо отдать должное Карлсену, он умеет держать такие удары, они не выбивают его из колеи. Он очень быстро восстанавливается, такие удары его только раззадоривают, и он начинает играть еще жестче. Собственно говоря, на тай-брейке это и произошло".
+                        "Если бы был перерыв и тай-брейк проводился бы на следующий день, то у Даниила было бы больше шансов на победу, - продолжил собеседник агентства. - У Карлсена все же чемпионский характер, в мировой элите он как никто умеет держать удар. Казалось бы, так бездарно проиграть второй матч, когда все валится из рук и допущены одноходовые зевки. И вдруг после небольшого перерыва он возвращается к своему прежнему состоянию и, самое главное - добивается спортивной цели".</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <h2>Актриса из сериала "Ход королевы" намекнула, будет ли продолжение</h2>
+              <img src="img/11.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Новости</h5>
+                <p class="card-text"><b>МОСКВА, 9 фев – РИА Новости.</b> Исполнительница главной роли в сериале "Ход королевы" Аня Тейлор-Джой рассказала о возможном продолжении проекта, сообщает портал Businessworld.</p>
+                  <img src="img/12.webp" class="card-img-top" alt="...">
+                  <p class="card-text"><small class="text-muted">© Wonderful Films (2020)</small></p>
+                  <div class="card-text"><b>Кадр из сериала "Ход королевы</b></div>
+                  <button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    Читать далее
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                      <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                    </svg>
+                  </button>
+                  <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                      <p>"Удивительно, что люди хотят увидеть второй сезон, хотя мы сами даже не обсуждали это, — призналась актриса. — Но никогда не говори "никогда" в Голливуде. Было бы интересно увидеть Бет (героиня, которую сыграла Тейлор-Джой — Прим.ред.) в роли матери. Особенно теперь, когда она больше знает о своих демонах"
+                      Проект "Ход королевы" вышел на Netflix прошлой осенью. В основе шоу одноименный роман Уолтера Тевиса 1983 года о гениальной шахматистке, лишившейся родителей. В детском приюте она начала принимать успокоительные и научилась играть в шахматы, в которых очень быстро преуспела. В сериале показан ее путь от 8 до 22 лет.</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <a href="#top" class="float-right"> вернуться на вверх
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h3>About us</h3>
+        <p><b>Founder & editor-in-chief,Web-Developer,Design:</b> Denis Chernikov (e-mail:arinohka.85@mail.ru)</p>
+      </div>
+   </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
